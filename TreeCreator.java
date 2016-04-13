@@ -53,7 +53,7 @@ public class TreeCreator {
 		}
 
 		default:
-			System.out.println("PodaÂ³eÅ“ zÂ³y znak !");
+			System.out.println("Poda³eœ z³y znak !");
 		}
 		
 
