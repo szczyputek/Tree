@@ -14,7 +14,7 @@ public class Main {
 		
 		//System.out.println("Podaj kierunek ( lewo - left, œrodek - up, prawo - right, dol-down ) : ");
 		//String kierunek = odczyt.nextLine();
-		String kierunek="up";
+		String kierunek="right";
 		
 		System.out.println("Podaj ilosc: ");
 		int ilosc = odczyt.nextInt();

@@ -25,7 +25,15 @@ public class TreeCreator {
 		}
 
 		case "right": {
-			level += add(2 * currentlevel + 1, sign);
+			if(currentlevel<=nOflevels){
+				level += add(currentlevel, sign);
+				}
+				if(currentlevel==nOflevels-1)
+					{
+					level+="\n";}
+			if(currentlevel>nOflevels){
+					level+= add(2*nOflevels-currentlevel,sign);
+				}
 			break;
 		}
 //current-aktualny(idzie od 0), nOflevels-liczba poziomow(od uzytkownika)
@@ -53,7 +61,7 @@ public class TreeCreator {
 		}
 
 		default:
-			System.out.println("Poda³eœ z³y znak !");
+			System.out.println("Podales zly znak !");
 		}
 		
 
@@ -76,7 +84,7 @@ public class TreeCreator {
 			}
 		}}
 		
-		else if (direction.equals("left")|| direction.equals("rigth"))
+		else if (direction.equals("left")|| direction.equals("right"))
 		{
 			for (int i = 0; i < 2*nOflevel; i++) {
 				{
