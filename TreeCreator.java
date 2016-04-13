@@ -47,14 +47,13 @@ public class TreeCreator {
 		}
 		
 		case "down": {
-			level += add(nOflevels - currentlevel-1, " ");
-			level += add(currentlevel + 1, sign);
-			
+			level += add(currentlevel, " ");
+			level += add(2*nOflevels-2 - (2*currentlevel-1), sign);
 			break;
 		}
 
 		default:
-			System.out.println("Poda³eœ z³y znak !");
+			System.out.println("PodaÂ³eÅ“ zÂ³y znak !");
 		}
 		
 
